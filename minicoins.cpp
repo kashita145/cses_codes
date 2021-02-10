@@ -66,6 +66,8 @@ int intlog(double base, double x) {
 void read(vi & a) { for (int i = 0; i < sz(a); ++i) cin >> a[i];}
 
 //1d dp 
+//checking the min number of coins to form the sum "i"
+// 2 for loops so you take the min of the remainder sum-- min coins to achieve that 
 
 int solve(int n,int sum, vector<int> v){
     vector<int> dp(sum+1);
